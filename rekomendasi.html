@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rekomendasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Rekomendasi Untuk Kamu</h1>
+</header>
+
+<section class="content">
+    <div id="result"></div>
+    <br>
+    <a href="payment.html" class="btn">Lanjut ke Payment</a>
+</section>
+
+<script>
+let undertone = localStorage.getItem("undertone");
+let face = localStorage.getItem("face");
+
+let result = document.getElementById("result");
+
+if (undertone == "warm") {
+    result.innerHTML = `
+    <h3>✨ Undertone Warm</h3>
+    Warna cocok: Olive, Caramel, Mocca <br><br>
+    <b>Rekomendasi: Pashmina Viscose</b><br><br>
+    <a href="https://vt.tiktok.com/ZSmETFXp7/" target="_blank" class="btn">
+    Tutorial Pashmina Viscose di TikTok
+    </a>
+    `;
+}
+else if (undertone == "cool") {
+    result.innerHTML = `
+    <h3>✨ Undertone Cool</h3>
+    Warna cocok: Dusty Pink, Navy, Mauve <br><br>
+    <b>Rekomendasi: Pashmina Ceruty</b><br><br>
+    <a href="https://vt.tiktok.com/ZSmE3svou/" target="_blank" class="btn">
+    Tutorial Pashmina Ceruty di TikTok
+    </a>
+    `;
+}
+else {
+    result.innerHTML = `
+    <h3>✨ Undertone Neutral</h3>
+    Warna cocok: Nude, Soft Brown, Cream <br><br>
+    <b>Rekomendasi: Segi Empat Voal</b><br><br>
+    <a href="https://vt.tiktok.com/ZSmE3Pv4h/" target="_blank" class="btn">
+    Tutorial Segi Empat Voal di TikTok
+    </a>
+    `;
+}
+</script>
+
+</body>
+</html>

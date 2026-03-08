@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #fdf6f9;
+}
+
+header {
+    background-color: #c2185b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #f8bbd0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #880e4f;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    padding: 30px;
+}
+
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.produk {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button, .btn {
+    background-color: #c2185b;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}

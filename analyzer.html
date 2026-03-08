@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hijab Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Hijab Match Analyzer</h1>
+</header>
+
+<section class="content">
+
+<p>Upload Foto:</p>
+<input type="file">
+
+<p>Pilih Undertone:</p>
+<select id="undertone">
+    <option value="warm">Warm</option>
+    <option value="cool">Cool</option>
+    <option value="neutral">Neutral</option>
+</select>
+
+<p>Pilih Bentuk Wajah:</p>
+<select id="face">
+    <option value="round">Bulat</option>
+    <option value="oval">Oval</option>
+    <option value="square">Kotak</option>
+</select>
+
+<br><br>
+<button onclick="analyze()">Lihat Rekomendasi</button>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
